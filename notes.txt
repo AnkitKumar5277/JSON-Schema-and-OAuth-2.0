@@ -47,3 +47,9 @@ How to do in REST ASSURED?
  Adding maven dependency of json-schema-validator
  import io.restassured.module.jsv.JsonSchemaValidator;
  JsonSchemaValidator.matchesJsonSchemaInClasspath("AuthJsonSchema.json")
+
+OAuth 2.0
+ek authorization protocol hai jo user ke data ko secure tarike se share karne deta hai 
+bina password diye.
+Ye access token ke through third-party apps ko limited access deta hai user ke account par.
+
