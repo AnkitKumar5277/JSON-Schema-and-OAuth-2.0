@@ -6,7 +6,7 @@
      →--(GET /user with token)--> [GitHub API]
      ←--(User Data)-- [GitHub]
 
-🧠 What You Learned
+🧠 Key learnings: -
 Registered an OAuth client
 *How to use Postman to test the complete OAuth 2.0 Authorization Code Flow
 How to call a protected API using the Access Token
