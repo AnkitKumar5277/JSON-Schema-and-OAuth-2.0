@@ -1,0 +1,28 @@
+JSON Schema and OAuth 2.0
+
+JSON Schema Validation 
+JSON data ka structure aur type expected format ko check karte h ki sahi hai ya nahi. 
+Isse data validation easy ho jaata hai before use in API ya database.
+
+JSON
+ek lightweight data format hai 
+jo data ko store aur transfer karta h
+Yeh data ko key-value pairs ke form mein represent karta hai, 
+jaise ek dictionary.
+
+JSON Schema me hum check kar sakte hain ki 
+data ka structure sahi hai ya nahi — jaise keys, data types, aur required fields.
+Yeh ensure karta hai ki JSON data valid aur expected format me ho.
+
+How to do it in Postman : -
+ 1. Copy the response to these sites
+ // Create the Schema using jsonschema.net
+ // another tool - https://easy-json-schema.github.io/
+ // https://www.liquid-technologies.com/online-json-to-schema-converter"
+ 2.  create a variable like this 
+var schema = {); put into it
+ 3. Use Tiny validate to verify with reponse data.
+ pm.test('JSON Schema', function() {
+  var jsonData = pm.response.json();
+  pm.expect(tv4.validate(jsonData, schema)).to.be.true;
+ });
