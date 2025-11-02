@@ -1,0 +1,91 @@
+🧩 Project Goal
+
+You’ll test OAuth 2.0 Authorization Code Flow using GitHub API — get an access token and call an API like /user to fetch profile info.
+
+🪜 Step-by-Step OAuth 2.0 Project (GitHub + Postman)
+Step 1: Register your Application in GitHub
+
+Go to: https://github.com/settings/developers
+
+Click “New OAuth App”
+
+Fill in details:
+
+Application name: OAuth2 Test App
+
+Homepage URL: https://example.com (any URL)
+
+Authorization callback URL:
+👉 https://oauth.pstmn.io/v1/callback
+(Postman’s special callback for OAuth testing)
+
+Click Register application
+
+You’ll get:
+
+Client ID
+
+Client Secret
+
+📌 Keep both safe — you’ll need them in Postman.
+
+Step 2: Open Postman and Set Up OAuth 2.0
+
+Open Postman
+
+Create a New Request (example: “GitHub OAuth2 Test”)
+
+Click Authorization tab
+
+Choose Type → OAuth 2.0
+
+Click Get New Access Token
+
+Step 3: Fill OAuth 2.0 Details
+Field	Value
+Token Name	GitHub OAuth
+Grant Type	Authorization Code
+Callback URL	https://oauth.pstmn.io/v1/callback
+Auth URL	https://github.com/login/oauth/authorize
+Access Token URL	https://github.com/login/oauth/access_token
+Client ID	(from GitHub app)
+Client Secret	(from GitHub app)
+Scope	read:user
+Client Authentication	Send as Basic Auth Header
+
+Then click Get New Access Token
+
+Step 4: Authorize
+
+You’ll be redirected to GitHub → Login → Click “Authorize [Your App Name]”
+
+✅ Postman will then show your Access Token.
+
+Click Use Token.
+
+Step 5: Test API Call
+
+In Postman, use:
+
+GET https://api.github.com/user
+
+
+Under Authorization, select:
+
+Type: Bearer Token
+
+Token: (auto-filled from step 4)
+
+Click Send
+
+💥 You should see your GitHub profile JSON (login name, id, etc.)
+
+🧠 What You Learned
+
+Registered an OAuth client
+
+Used Authorization Code Flow in Postman
+
+Exchanged a code for an access token
+
+Called an API with that token
