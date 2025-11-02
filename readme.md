@@ -1,8 +1,8 @@
-
+OAuth-2.0 : -
 <img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/cf5bf7cc-66e4-4ad0-a6ad-6f5770bac17e" />
 
 
-🧠 Key learnings: -
+🧠 Key learnings: 
 Registered an OAuth client
 *How to use Postman to test the complete OAuth 2.0 Authorization Code Flow
 How to call a protected API using the Access Token
@@ -20,3 +20,16 @@ Token Validity	Tokens expire; check expiry time
 Scope Behavior	Try using token with less/more scopes
 Unauthorized Access	Try API without token → should get 401 Unauthorized
 Token Reuse	Use the same token again → should still work until expired
+
+JSON Schema : -
+
+Key Learnings :
+What JSON Schema is
+Step-by-step guide in Postman
+How to test schema validation
+
+Step	Task	Description
+1	Create API request - Use https://reqres.in/api/users/2
+2	Write Schema - Define expected structure
+3	Add in Tests tab - Use pm.response.to.have.jsonSchema(schema)
+4	Run test - Validate schema
