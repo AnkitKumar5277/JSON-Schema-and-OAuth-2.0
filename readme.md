@@ -11,8 +11,7 @@ Client ID / Secret usage
 Token-based authentication
 Testing secured APIs using Postman
 
-POSTMAN LINK: 
-https://ankitkumar-2356106.postman.co/workspace/PYATB5X~6c73ff5a-90de-444d-a0c7-b5326cebbe4c/collection/44694445-2c780b0b-89ec-45f8-aba6-07f7dc7fc609?action=share&source=copy-link&creator=44694445
+POSTMAN LINK: https://ankitkumar-2356106.postman.co/workspace/PYATB5X~6c73ff5a-90de-444d-a0c7-b5326cebbe4c/collection/44694445-2c780b0b-89ec-45f8-aba6-07f7dc7fc609?action=share&source=copy-link&creator=44694445
 
 🧠 Key Testing Learnings
 Concept	What to Test
