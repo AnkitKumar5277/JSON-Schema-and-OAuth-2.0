@@ -121,3 +121,11 @@ You’ll see a JSON response like:
 
 
 🎉 That’s your GitHub profile data — fetched using OAuth 2.0 authorization!
+
+🧩 Behind the Scenes (What Happened Technically)
+Step	Action	Behind the Scene
+1	You clicked “Get Token”	Postman redirects you to GitHub Login
+2	You logged in	GitHub asks for consent
+3	You clicked “Authorize”	GitHub sends an Authorization Code to Postman
+4	Postman sends that code + secret to GitHub	GitHub returns an Access Token
+5	You used that token to call /user API	GitHub verifies it and sends data
